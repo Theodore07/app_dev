@@ -9,7 +9,6 @@ interface Breadcrumb {
 }
 
 
-
 export default function Breadcrumbs({
   breadcrumbs,
 }: {

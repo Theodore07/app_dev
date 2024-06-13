@@ -76,10 +76,10 @@ export async function fetchCardData() {
     const totalPendingInvoices = formatCurrency(data[2].rows[0].pending ?? '0');
 
     return {
-      numberOfCustomers,
-      numberOfInvoices,
       totalPaidInvoices,
       totalPendingInvoices,
+      numberOfInvoices,
+      numberOfCustomers,
     };
   } catch (error) {
     console.error('Database Error:', error);
